@@ -1,0 +1,208 @@
+23-07-2024
+[    create a html page with black background having a logo of a news channel with a title , a paragraph decribing the news channel. 
+     three pictures which are rolling for three different categories of sports , entertainment and politics below the picture create
+     4 paragraphs describing the picture, vertical , three columns , below three paragraphs video. 
+
+     A fullstack is a development of a website using one programming language or one technology with : design , develop, test, deploy.
+
+     Mern Stack is a fullstack using javascript only without the use of html, css or any other language.
+
+     What is MERN?
+     M - MongoDB
+     E - ExpressJS
+     R - ReactJS
+     N - NodeJS
+
+     Client side - frontend - design- reactJS-front end
+     ReactJS is used to design frontend for client side.
+     Server side - development - backend - xpressJS - MangoDB
+     MongoDB and xpressJS IS used to 
+     Fullstack - web application - test- ESLIND
+     Inorder to test a fullstack webapplication we use ESLIND
+     Fullstack webapplication realtime using thirdparties servers vercel, heroku, firebase
+
+     NodeJS is used as an runtime environment for developing mernstack/javascript application in local environment/case.
+ 
+     NOTE:while installing nodeJS check add path option must be selected
+
+     NODE version msut be greater than 17
+
+     Steps to create react application. reactJS is a library/package to design frontend web application for the client. it is not a language or framework
+     reactJS works under node terminology.
+     1. Create a directory or a folder in vs code editor. ex: folder name:klu
+     2. Navigate to terminal - new terminal option in vs code to open terminal.
+     3. change the directory to klu using cd klu in  terminal.
+     4. use npm command: node package manager or npx(node package executor) to install react library in terminal
+     npm install create-react app clientnpx create - react app client
+     the above commands used to setup react front end app
+     NOTE:  connect to the internet wait till u get happy hacking messge
+     5. change the directory to the cilent using 
+     6. use npm start command to run our first react web application.
+     7. it will display default react page with react logo
+]
+
+
+24-07-24
+[ JAVASCRIPT
+	Java is an object oriented programming language, javascript is object-based 
+	object oriented means it requires an environment to establish
+	learning curve of javascript is easier
+	java is multithreading javascript is a single threaded language
+	java is compiler based, javascript is interpreter
+	** important topics to learn are :
+	    1. types of variable declarations: let, var, const
+		2. arrays, collections, loops, functions, class, referencing objects
+	
+	inside client: node_modules consists all package library binary files all installed 
+	react project structues: node_modules:
+	  packages, libraries or binary files which are installed or installed packages inside the react applicaiton used for project
+	NOTE: don't push node_modules into github
+	public directory consists all images , files which can be used to share for the applications.
+	** index.html is the only one html page to work with react application.
+	Source code src consists all codes related to react applications.
+]
+
+
+26-07-24
+[ 
+	1. create a new project with folder name klu and
+	2.inside create a react application with a name erp
+	3. install a plug-in using extension es7 react redox snippets
+	HINT  use ctrl+shift+s to open extension tab in vs code
+	5.	parent of all components is app.js
+	component is anything that is visually appeared on the screen
+	Components : visually appearing interactive ui developed through react 
+	we can create components using two models: 1. function based components
+	2.class based components
+	Note : in our session we use only funciton-based components
+		
+	command : npx create-react-app erp
+	          npm create-react-app erp
+			  npm-g-create-react-app erp
+	(stack overflow)
+
+	create 5components :
+	1.Students.js : use three students in a list manner, each students consisting id,name,branch,year
+	2.Faculty.js : display 3 faculty details in a table manner each faculty have id, name, department, designation
+	3.Timetable.js : Days, hours, course, room no. in table manner
+	4.Courses.js : display in Card model, coursecode, coursename, lpts, credits
+	
+	Header.js, 
+	Footer.js: display the current date in this format dd/mm/yyy
+	we need to create components under src folder or directory under
+	components folder
+	use ES7 to create function or class-based components.
+	
+	[rafce] [rcce]
+	
+	import will be <header/>
+	import can be a self closing tag.
+	
+	{ M107 }
+]
+
+30-07-24
+[
+	
+	=> Passing data across components or state management
+	1. we can pass the data to the components in two ways either by passing data as arguments, or passing data as props
+	
+	2.PROPS: Props is keyword. it is an object which can take a collections of multiple
+		values. props values are accessed by using props.variableName. 
+	3.Object: object in javascript works like a collection, they are created by using {}
+	props keyword must be used in functional component as argument
+	
+	import React from 'react'
+
+	const User = (props) => {
+		return (
+			<div>
+			<h1> Welcome {props.name} logged in as {props.type} at {props.branch}</h1>
+			</div>
+		)
+	}
+
+	export default User
+
+	<User name="teju" type="student"/>
+	
+	task: use props to work with the existing components : faculty, students,timetable, courses.
+	https://bit.ly/Kognitiv-Aventing-24
+]
+
+31-07-24
+
+[
+	git(version must be greater than 2), gitHub, gitlab(it's a project management website, it is only for private organizations)
+	git is a tool to manage projects as version control as well as collaborative development
+	git is a command line interface(cli)
+	github is a web interface
+	private organizations manage their projects using gitlab ex:kl univ
+ 
+	commands: 1. git add (adds files, directories of a project or folder to a git repository
+	2. git commit (save permanently)
+	3. git push (send local files or directories or projects to the remote repository of github)
+	4. git pull (fetches folders, files from github to local system)
+	5. git fork (command to access the branches of repositories)
+	 
+	go to view in vs code, click command palatte, type git:initialize
+
+	create a repository in github using y23MSWD32882
+	USe vscode terminal to run the commands of GIT
+	check github repository for projects
+]
+
+02-08-24
+[
+
+      	steps to clone repository from the github to vscode editor.
+ 	note find a repository that is to be cloned
+	1.create a new empty folder or directory in vs code
+	2.open the terminal of vs code
+	3.configure it with user and email
+	4.run the command "git clone repo_url"
+        5.extract the folder or directory of the cloned repository
+	6.install all dependencies using "npm install"
+	7.change the directory of the app
+	8.npm start
+
+	keyword CI/CD = continuous integration/continuous development
+	every development of an application requires changes/updates which are continuous. CI/CD option provides ;
+	1 pipeline of works
+	2 workflows
+
+	Task- provide steps to purchase a mobile from an e-commerce website. imp note= imagine the user is not a techinal person
+	provide the steps till the products to the customer.
+	s1- open flipkart.com
+	s2- in search bar type smartphones 
+	s3- use filter and sort to sort out the price range, brand, model, and other specifications
+	s4- after selecting the mobile u need, add it cart
+	s5- check for any discounts or coupons that are available and like buy now, 
+	s6- u will be taken to the screen of address page in order to select where the product is to be delivered
+	s7- after that paymode page will open , u have to select the payment options like creditcard, cash on delivery
+	s8- after successfully placing the order, u will get notifications of the delivery date, packing, shipping,arriving
+	and out for delivery .
+
+	task to do --- create a component called feedback with the data passed throug props or collections
+		use following attributes for feedback -- 1. faculty id, name , course, description of feedback
+		use 5 faculty feedbacks as details as a collections and pass as props
+		create a component called counsellor having cousellor id, name , student count, branch
+	use card layout for counsellor with props and use props 
+	HINT USE INLINE OR GLOBAL STYLES FOR ALL COMPONENTS
+	use table, lists, cards
+	hint use jquery to animate
+
+]
+
+27-08-24
+
+[
+	
+
+     
+	
+
+
+
+ 	
+	
